@@ -9,7 +9,7 @@ int a;
 }
 int sum_of_num(int a , int b)
 {
-	int sum;
+  int sum;
   sum = a+b;
   return sum;
 }
