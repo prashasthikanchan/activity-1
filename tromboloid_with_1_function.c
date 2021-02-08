@@ -1,4 +1,5 @@
 //Write a program to find the volume of a tromboloid using one function
+#include<stdio.h>
 void main()
 {
 int h, b, d, volume;
