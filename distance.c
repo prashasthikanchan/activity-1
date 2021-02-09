@@ -1,12 +1,12 @@
-//WAP to find the distance between two point using 4 functions.
 #include<stdio.h>
 #include<math.h>
 int coordinates()
 {
 int a;
 scanf("%d",&a);
+return a;
 }
-int distance(x1,x2,y1,y2)
+int distance(int x1,int x2,int y1,int y2)
 {
 int x,y,dist;
 x= x2-x1;
@@ -16,7 +16,7 @@ return dist;
 }
 void output(int dist)
 {
-printf("the distance between the given points is %d",&dist);
+printf("the distance between the given points is %d",dist);
 }
 int main()
 {
@@ -29,7 +29,6 @@ printf("enter the value of y1:");
 y1 = coordinates();
 printf("enter the value of y2:");
 y2 = coordinates();
-
 d = distance(x1,x2,y1,y2);
 output(d);
 return 0;
