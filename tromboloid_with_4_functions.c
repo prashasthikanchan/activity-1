@@ -14,7 +14,7 @@ return volume;
 }
 void print(int volume)
 {
-printf("Volume is %d",volume);
+printf("Volume is %f",volume);
 }
 int main()
 {
@@ -26,7 +26,6 @@ b = input();
 printf("enter the depth:");
 d = input();
 v = vol(h, b, d);
-
 print(v);
 return 0;
 }
