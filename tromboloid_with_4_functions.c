@@ -3,13 +3,13 @@
 float input()
 {
 float a;
-scanf("%d",&a);
+scanf("%f",&a);
 return a;
 }
 float vol(float a, float b , float c)
 {
 int volume;
-volume = ((a*b*c)+(c/b))*(1/3);
+volume = ((a*b*c)+(c/b))/3;
 return volume;
 }
 void print(int volume)
@@ -26,6 +26,9 @@ b = input();
 printf("enter the depth:");
 d = input();
 v = vol(h, b, d);
-print(h,b,d);
+
+print(v);
 return 0;
 }
+
+
