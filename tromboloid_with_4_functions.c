@@ -14,7 +14,7 @@ return volume;
 }
 void print(int volume)
 {
-printf("Volume is %f",volume);
+printf("Volume is %d",volume);
 }
 int main()
 {
