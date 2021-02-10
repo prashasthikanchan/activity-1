@@ -9,7 +9,7 @@ float y;
 typedef struct point Point;
 Point input()
 {
-point p;
+Point p;
 printf("enter the value of abscissa");
 scanf("%f",&p.x);
 printf("enter the value of ordinate");
@@ -24,7 +24,7 @@ return dist;
 }
 void output(float dist)
 {
-printf("the distance between the given points is %d",dist)
+printf("the distance between the given points is %f",dist);
 }
 int main()
 {
