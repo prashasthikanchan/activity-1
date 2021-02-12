@@ -7,29 +7,31 @@ printf("enter the number\n");
 scanf("%d",&num);
 return num;
 }
-int compute(int num[n], int n )
+int compute(int n,int num[n] )
 {
-
+int i;
 int sum = 0;
 for(int i=0;i<n;i++)
 {
-printf("enter %d numbers\n",n);
-scanf("%d",&num[n]);
-sum = sum + num[n];
+printf("enter %d numbers\n",i);
+scanf("%d",&num[i]);
+sum = sum + num[i];
 }
 return sum;
 }
 void output(int sum)
 {
-printf("the sum is %d",sum);
+printf("The sum is %d",sum);
 }
 int main()
 {
-int num,sum;
-num = input();
+int n,sum;
+n = input();
 int num[n];
-sum = compute(num[n], n);
+sum = compute(n, num);
 output(sum);
 return 0;
 }
+
+
 
