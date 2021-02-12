@@ -1,6 +1,5 @@
 //WAP to find the sum of n fractions.
 #include<stdio.h>
-#include<math.h>
 struct value
 {
 float n;
@@ -10,22 +9,19 @@ typedef struct value fraction;
 fraction input()
 {
 fraction f;
-float count;
-float a[count];
-float sum = 0;
 printf("enter the value of numerator:");
-scanf("%d"&f.n);
+scanf("%f",&f.n);
 printf("enter the value denominator:");
-scanf("%d",&f.d);
+scanf("%f",&f.d);
 return f;
 }
 float compute()
 {
-fraction f;
 int count;
 float a[count];
 float sum = 0;
-printf("enter the count of numbers");
+fraction f;
+printf("enter the count of numbers to add");
 scanf("%d",&count);
 for(int i = 0;i<count;i++)
 {
@@ -41,10 +37,9 @@ printf("the sum is %f",sum);
 }
 float main()
 {
-sum = input();
+float sum=0;
+sum = compute();
 output(sum);
 return 0;
 }
-
-
 
