@@ -2,28 +2,34 @@
 #include<stdio.h>
 int input()
 {
-int a;
-  printf("Enter number");
-  scanf("%d",&a);
-  return a;
+int num;
+printf("enter the number\n");
+scanf("%d",&num);
+return num;
 }
-int sum_of_num(int a , int b)
+int compute(int num[n], int n )
 {
-  int sum;
-  sum = a+b;
-  return sum;
+
+int sum = 0;
+for(int i=0;i<n;i++)
+{
+printf("enter %d numbers\n",n);
+scanf("%d",&num[n]);
+sum = sum + num[n];
 }
-void output(int a , int b , int c)
+return sum;
+}
+void output(int sum)
 {
-  printf("sum of %d and %d is %d",a,b,c);
+printf("the sum is %d",sum);
 }
 int main()
 {
-int x , y ,z;
-  x = input();
-  y = input();
-  z = sum_of_num(x,y);
-  output(x,y,z);
-  return 0;
+int num,sum;
+num = input();
+int num[n];
+sum = compute(num[n], n);
+output(sum);
+return 0;
 }
 
