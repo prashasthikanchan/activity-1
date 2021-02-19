@@ -15,19 +15,19 @@ printf("enter the value of denominator:");
 scanf("%d",&f.d);
 return f;
 }
-float compute_n(fraction f1, fraction f2)
+int compute_n(fraction f1, fraction f2)
 {
 int sum_num;
 sum_num = (f1.n*f2.d)+(f2.n*f1.d);
 return sum_num;
 }
-float compute_d(fraction f1, fraction f2)
+int compute_d(fraction f1, fraction f2)
 {
 int sum_den;
 sum_den = f1.d*f2.d;
 return sum_den;
 }
-float main()
+int main()
 {
 int sum_of_num,sum_of_den;
 fraction f1,f2;
